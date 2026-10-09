@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.max-width {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header {
+  background-color: #26877F;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 75px;
+}
+
+.small-logo {
+  width: 50px;
+}
+
+nav {
+  background-color: #EDEFF0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0 auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  padding: 1rem;
+  color: #19615B;
+  background-color: #EDEFF0;
+  transition: color 750ms ease, background-color 750ms ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: #26877F;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.nav-link:hover {
+  background-color: #B2B3B4;
+  color: #134944;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+#promo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-image: url("images/promo-banner.jpg");
+  background-size: cover;
+}
+
+#promo-container h1, #promo-container h2 {
+  color: #fff;
+  background-color: #699e78;
+  padding: 0.5rem 0.75rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.flex-item {
+  margin: 0 1rem;
+  flex: 1 1 0;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+footer img {
+  padding: 5px;
+}
+
+footer p {
+  text-align: right;
+}
