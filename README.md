@@ -10,3 +10,5 @@
 2. Open a new tab or window in your browser
 3. Paste the copied path into the navigation bar and click `enter`/`return` to go to the page
 4. You should now be able to see the styled Lucky Shrub website
+
+<img width="858" height="982" alt="image" src="https://github.com/user-attachments/assets/b0c81aea-d711-4ffd-b803-c4f80a4625a5" />
